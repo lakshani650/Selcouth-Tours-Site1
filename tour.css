@@ -283,13 +283,13 @@ color: white;
   }
 
   .hero {
-    height: 350px;
+    height: 500px;
   }
 
   .carousel img {
-    height: 350px;
+    height: 500px;
   }
-  .hero-text{height: 300px;}
+  .hero-text{height: 400px;}
 }
 
 /* =======footer======== */
