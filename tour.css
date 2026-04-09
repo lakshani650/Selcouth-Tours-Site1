@@ -143,7 +143,7 @@ nav ul li a:hover {
   /* =========home page=========== */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 530px;
   overflow: hidden;
    margin-left: 10px;
   margin-right: 10px;
@@ -290,9 +290,9 @@ color: white;
   }
 
   .carousel img {
-    height: 500px;
+    height: 100%;
   }
-  .hero-text{padding:20px 15px; width:90%}
+  .hero-text{height:450px}
   .why-box h3::after{width:200px}
 }
 
