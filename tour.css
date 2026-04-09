@@ -915,7 +915,7 @@ text-align: center;
 } 
 
                /* ======terms page========= */
-.terms{padding: 60px 40px 0 0;
+.terms{padding: 60px 40px ;
 text-align: center;
 background: url("myimages/img8.jpeg") no-repeat center/cover;
 }
