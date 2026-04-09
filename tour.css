@@ -86,6 +86,7 @@ nav ul li a:hover {
   .header-left {
     flex-direction: row;
     text-align: center;
+    margin-right:40px
   }
 
   .menu-toggle {
@@ -94,6 +95,7 @@ nav ul li a:hover {
     position: absolute;
     top: 45px;
     right: 20px;
+    margin-left:20px
   }
 
   nav {
@@ -289,7 +291,8 @@ color: white;
   .carousel img {
     height: 500px;
   }
-  .hero-text{height: 400px;}
+  .hero-text{height: 430px;}
+  .why-box h3::after{width:200px}
 }
 
 /* =======footer======== */
