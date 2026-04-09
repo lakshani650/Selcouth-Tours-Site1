@@ -778,7 +778,7 @@ font-family: cursive;
 font-size: 12px;}
 
             /* ==========contact page========== */
-.contact{padding: 60px 40px 0 0;
+.contact{padding: 60px 40px ;
 text-align: center;
 }
 
@@ -887,7 +887,7 @@ text-align: center;
 /* 📱 MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
   .contact-section {
-    width: 95%;
+    width: 100%;
   }
 
   .contact-card {
@@ -905,11 +905,12 @@ text-align: center;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items:center;
   }
 
   .btn {
     justify-content: center;
-    width: 100%;
+    width: 50%;
   }
 } 
 
