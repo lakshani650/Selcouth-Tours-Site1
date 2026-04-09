@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selcouth Tours</title>
+  <link rel="stylesheet" href="tour.css">
+  <link rel="stylesheet" href="touranimations.css">
+</head>
+<body>
+
+<header>
+ <div class="header-left">
+  <div class="logo">
+    <img src="myimages/logo.jpeg" alt="Selcouth Tours" class="logo-img">
+  </div>
+  <p class="tagline">www.selcouthtours.lk</p>
+</div> 
+<div class="menu-toggle" id="menu-toggle">
+  ☰
+</div>
+  <nav id="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="gallery">
+
+  <h1>Explore Our Gallery</h1>
+  <p class="gallery-intro">
+    Discover the beauty of Sri Lanka through our experiences.
+  </p>
+
+  <!-- FILTER BUTTONS -->
+  <div class="gallery-filters">
+    <button onclick="filterSelection('all')" class="active">All</button>
+    <button onclick="filterSelection('beach')">Beaches</button>
+    <button onclick="filterSelection('mountain')">Mountains</button>
+    <button onclick="filterSelection('culture')">Culture</button>
+  </div>
+
+  <!-- GRID -->
+  <div class="gallery-grid">
+
+    <div class="gallery-item beach">
+      <img src="myimages/galle.jpeg">
+      <div class="overlay">Beach</div>
+    </div>
+
+    <div class="gallery-item mountain">
+      <img src="myimages/img3.png">
+      <div class="overlay">Mountain</div>
+    </div>
+
+    <div class="gallery-item culture">
+      <img src="myimages/img5.png">
+      <div class="overlay">Culture</div>
+    </div>
+
+    <div class="gallery-item beach">
+      <img src="myimages/img4.png">
+      <div class="overlay">Beach</div>
+    </div>
+
+    <div class="gallery-item beach">
+      <img src="myimages/galle.jpeg">
+      <div class="overlay">Beach</div>
+    </div>
+
+    <div class="gallery-item mountain">
+      <img src="myimages/img3.png">
+      <div class="overlay">Mountain</div>
+    </div>
+ 
+
+    <!-- Add more images with categories -->
+
+  </div>
+
+</section>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms & Conditions</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact Us</h3>
+     <div class="contact-item">
+  <img src="myimages/phone.png" class="icon">
+  <span>0712345678</span>
+</div>
+
+<div class="contact-item">
+  <img src="myimages/whatsapp.png" class="icon">
+  <span>0712345678</span>
+</div>
+
+<div class="contact-item">
+  <img src="myimages/email.png" class="icon">
+  <span>info@selcouth.com</span>
+</div>
+
+<div class="contact-item">
+  <img src="myimages/location.png" class="icon">
+  <span>Sri Lanka</span>
+</div> 
+    </div>
+
+<div class="footer-box">
+  <h3>Follow Us</h3>
+
+  <div class="social-grid">
+    <a href="https://www.facebook.com/share/18AExLLPNd/" target="_blank" class="social-item">
+      <img src="myimages/facebook.png" class="social-icon">
+      <span class="tooltip">Facebook</span>
+    </a>
+
+  <a href="https://www.facebook.com/share/18AExLLPNd/" target="_blank" class="social-item">
+  <img src="myimages/instagram.png" class="social-icon">
+  <span class="tooltip">Instagram</span>
+</a>
+
+<a href="https://www.facebook.com/share/18AExLLPNd/" target="_blank" class="social-item">
+  <img src="myimages/tiktok.png" class="social-icon">
+  <span class="tooltip">TikTok</span>
+</a>
+
+<a href="https://www.facebook.com/share/18AExLLPNd/" target="_blank" class="social-item">
+  <img src="myimages/tripadvisor.png" class="social-icon">
+  <span class="tooltip">TripAdvisor</span>
+</a>  
+  </div>
+</div>    
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Selcouth Tours | All Rights Reserved.
+  </div>
+</footer>
+
+
+<script>
+const toggle = document.getElementById("menu-toggle");
+const nav = document.getElementById("navbar");
+
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+</script>
+
+<script>
+filterSelection("all");
+
+function filterSelection(category) {
+  let items = document.getElementsByClassName("gallery-item");
+
+  if (category === "all") category = "";
+
+  for (let i = 0; i < items.length; i++) {
+    items[i].classList.remove("show");
+
+    if (items[i].className.indexOf(category) > -1) {
+      items[i].classList.add("show");
+    }
+  }
+}
+
+/* Active button highlight */
+let btns = document.querySelectorAll(".gallery-filters button");
+
+btns.forEach(btn => {
+  btn.addEventListener("click", function() {
+    document.querySelector(".gallery-filters .active").classList.remove("active");
+    this.classList.add("active");
+  });
+});
+</script>
+
+</body>
+</html>
