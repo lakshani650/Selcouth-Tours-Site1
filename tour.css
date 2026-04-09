@@ -79,7 +79,7 @@ nav ul li a:hover {
 @media (max-width: 768px) {
 
   header {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
   
@@ -92,7 +92,7 @@ nav ul li a:hover {
     display: block;
     color: white;
     position: absolute;
-    top: 25px;
+    top: 45px;
     right: 20px;
   }
 
